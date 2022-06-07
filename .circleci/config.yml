@@ -3,10 +3,16 @@ workflows:
   testing:
     jobs:
       - runner-test
+      - runner-test-2
 jobs:
   runner-test:
     machine: true
     resource_class: jkscci/linux-runner
     steps:
       - run: echo "Hi I'm on Runners!"
-      - run: echo "Hi I'm on Runners!" >> runner-test.txt
+      
+  runner-test-2:
+    machine: true
+    resource_class: jkscci/linux-runner2
+    steps:
+      - run: echo "Hi I'm on Runners 2!"
