@@ -9,4 +9,4 @@ jobs:
     resource_class: jkscci/linux-runner
     steps:
       - run: echo "Hi I'm on Runners!"
-      - run: touch runner.txt  
+      - run: echo "Hi I'm on Runners!" >> runner-test.txt
