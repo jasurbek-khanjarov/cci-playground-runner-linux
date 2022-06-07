@@ -13,6 +13,6 @@ jobs:
       
   runner-test-2:
     machine: true
-    resource_class: jkscci/linux-runner2
+    resource_class: jkscci/linux-runner
     steps:
       - run: echo "Hi I'm on Runners 2!"
